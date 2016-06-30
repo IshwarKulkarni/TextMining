@@ -5,7 +5,6 @@ VALGRIND ?= "false"
 CPP      = g++ -std=c++11 -pedantic
 CPPFLAGS = -Wall -g -I../../src -DDATA_LOCATION="\"../../data/\"" -lpthread
 
-SOURCES	:= $(shell find ../../src/data/ -name *.cxx)
 SOURCES	+= $(shell find ../../src/utils/ -name *.cxx)
 SOURCES	+= $(shell find ../../src/textmining -name *.cxx)
 

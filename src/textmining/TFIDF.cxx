@@ -152,7 +152,7 @@ void Search(size_t searchParallelSize = 32)
 
 int main(int argc, char** argv)
 {
-    ifstream in("data");
+    ifstream in(DATA_LOCATION "20ng-train-all-terms");
     if (!in) throw std::runtime_error("Failed to open file");
 
     std::unordered_set<std::string> StopWords;
